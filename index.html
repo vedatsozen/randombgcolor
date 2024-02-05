@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SITE 90</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+<button onclick="changebgcolor()">CHANGE BACKGROUND COLOR</button>
+
+<h1 id="colorcodeh1"></h1>
+
+<script>
+
+let colorcodeh1 = document.getElementById("colorcodeh1");
+
+function changebgcolor() {
+
+let randomR = Math.floor(Math.random() * 256 );
+let randomG = Math.floor(Math.random() * 256 );
+let randomB = Math.floor(Math.random() * 256 );
+
+let colorcode = "rgb(" + randomR + "," + randomG + "," + randomB + ")";
+
+document.body.style.backgroundColor = colorcode;
+
+colorcodeh1.innerHTML = colorcode;
+
+}
+
+</script>
+</body>
+</html>
